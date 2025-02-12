@@ -1,13 +1,11 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  /* height: 6em; */
+  /* padding: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
 }
@@ -17,6 +15,90 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+nav{
+  display: flex;
+
+  place-items: center;
+  justify-content: space-between;
+}
+
+.navlinks{
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+
+}
+
+li{ 
+  text-decoration: none;
+}
+
+
+.container{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.card{
+  background-color: #474444;
+  border-radius: 20px;
+  margin: 0;
+  padding: 1rem;
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.info{
+  margin-top: 16px 0 0 0;
+}
+
+.category{
+  font-size: small;
+  margin: 10px 0 0 0 ;
+  
+}
+
+.name{
+  margin: 0;
+
+}
+
+.price{
+  margin: 0;
+
+}
+
+.product-img{
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes logo-spin {
   from {
@@ -33,9 +115,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
